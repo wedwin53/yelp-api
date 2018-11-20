@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Yelp API</title>
+<style>
+.card-img-top{
+  width: 200px;
+  height: 200px;
+}
+.card{
+  width: 200px;
+  margin: 10px;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+  <div class="form-group m-4">
+    <input type="text" class="form-control" id="term-txt" placeholder="Term, ex: Food" required>
+    <button class='btn btn-primary btn-block mt-2' type='submit' onClick="loadData()">Consultar</button>
+  </div>
+  <div id="container" class="container">
+    <div class="row" id="card-container">
+      
+    </div>
+  </div>
+</div>
+</body>
+<script src="fetch.js"></script>
+</html>
